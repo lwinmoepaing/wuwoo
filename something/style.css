@@ -1,0 +1,271 @@
+
+* {
+	
+	box-sizing: border-box;
+
+	padding: 0px;
+	
+	margin: 0px;
+	
+	font-family: "Times New Roman";
+}
+html{
+
+	height: 100%;
+
+	padding: 0;
+
+	margin: 0;
+
+}
+body{
+
+	background: black;
+
+	height: 100%;
+
+	padding: 0;
+
+	margin: 0;
+}
+
+.wrap{	
+
+	min-height: 100%;
+
+	position: relative;
+
+}
+
+.clear::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+ /*For desktop*/
+
+
+[class*="c-"] {
+    float: left;
+}
+
+header{
+
+	background: black;
+
+	color: gold;
+
+	padding: 16px;
+
+	border-bottom: 20px solid gold;
+
+	position: relative;
+}
+
+.header{
+
+	font-size: 20px;
+
+}
+
+.c-akyii {
+	width: 100%;
+}
+
+.c-alatt {
+	width: 70%;
+}
+
+.c-athay {
+	width: 30%;
+
+	/*border: 1px solid red;*/
+}
+
+/*For Desktop Navigation*/
+
+nav.right {
+
+	float: right;
+
+	position: absolute;
+
+	right: 12px;
+
+	bottom: 12px;
+
+}
+
+nav.right ul{
+
+	list-style: none;
+
+	/*border: 1px solid red;*/
+
+}
+
+nav.right ul li{
+
+	display: inline-block;
+
+	width: 100px;
+
+	height: 30px;
+
+	border: 1.5px solid #ddd;
+
+	margin: 0px 3px 0px 3px;
+
+	border-radius: 20px;
+
+	text-align: center;
+
+	cursor: pointer;
+}
+
+nav.right ul li a{
+
+	text-decoration: none;
+
+	font-size: 22px;
+
+	font-family: ;
+
+	color : #ddd;
+
+}
+
+
+/*Navigation For Phone*/
+
+nav.mid {
+
+	display: none;
+
+	text-align: center;
+
+	margin: 12px 0px;
+
+}
+nav.mid ul{
+
+	list-style: none;
+
+	/*border: 1px solid red;*/
+
+}
+
+nav.mid ul li{
+
+	display: inline-block;
+
+	width: 100px;
+
+	height: 30px;
+
+	border: 1.5px solid gold;
+
+	margin: 2px 3px 2px 3px;
+
+	border-radius: 20px;
+
+	text-align: center;
+
+	cursor: pointer;
+}
+
+nav.mid ul li a{
+
+	text-decoration: none;
+
+	font-size: 22px;
+
+	font-family: ;
+
+	color : gold;
+
+}
+
+/*Middle COntent*/
+#conlay{
+	text-align: center;
+	background: #ddd;
+	border-bottom: 15px gold solid;
+
+}
+#conlay img{
+
+	max-width: 100%;
+
+	height: auto;
+
+	margin-bottom: 2px;
+
+	padding-bottom: 2px;
+}
+
+.content-lay{
+
+}
+
+
+/*Footer*/
+
+footer{
+
+	width: 100%;
+
+	color: rgba(0,0,0,0.5);
+
+	text-shadow: 0px 2px 3px gold;
+
+	font-size: 20px;
+
+	padding: 10px;
+
+	text-align: right;
+
+	background: rgba(255,255,255,0.2);
+
+	position: absolute;
+
+	bottom: 1px;
+
+	right: 1px;
+
+
+}
+
+
+
+.fade{
+	animation: fadename 1s ease-out;
+}
+
+@keyframes fadename{
+	from{ opacity: 0 }
+	to{ opacity: 1 }
+}
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+    
+    [class*="c-"] {
+        width: 100%;
+    }
+    .header{
+    	text-align: center;
+    	padding: 0px 2% 0px 2%;
+    }
+
+    .right{
+    	display: none;
+    }
+
+    nav.mid{
+    	display: block;
+    }
+
+}
