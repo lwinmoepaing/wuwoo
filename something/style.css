@@ -20,7 +20,7 @@ html{
 }
 body{
 
-	background: black;
+	background: white;
 
 	height: 100%;
 
@@ -60,6 +60,8 @@ header{
 	padding: 16px;
 
 	border-bottom: 20px solid gold;
+
+	box-shadow: 0px 0px 10px 0px black;
 
 	position: relative;
 }
@@ -190,10 +192,11 @@ nav.mid ul li a{
 
 /*Middle COntent*/
 #conlay{
+	padding-top: 20px;
 	text-align: center;
 	background: #ddd;
 	border-bottom: 15px gold solid;
-
+	box-shadow: 0px 0px 15px 0px black;
 }
 #conlay img{
 
@@ -241,7 +244,7 @@ footer{
 
 
 .fade{
-	animation: fadename 1s ease-out;
+	animation: fadename 1.5s ease-out;
 }
 
 @keyframes fadename{
