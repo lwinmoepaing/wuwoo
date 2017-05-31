@@ -9,33 +9,15 @@
 	
 	font-family: "Times New Roman";
 }
-html{
+html,body{
 
 	height: 100%;
 
-	padding: 0;
-
-	margin: 0;
-
-}
-body{
-
-	background: white;
-
-	height: 100%;
-
-	padding: 0;
-
-	margin: 0;
 }
 
 .wrap{	
 
-	min-height: 100%;
-
-	overflow: hidden;
-
-	position: relative;
+	height: 100%;
 
 }
 
@@ -285,15 +267,51 @@ nav.mid ul li a{
 
 	padding-bottom: 2px;
 
+
+	transition: all 2.5s ease;
+
 }
 
 .content-lay{
 
-	opacity: 1;
+	opacity: 0;
 
 }
 
+/*pone nae sar*/
 
+.amyint-apyae{
+
+	clear: both;
+
+	height: 80%;
+
+	background-size: cover;
+
+	background-attachment: fixed;
+
+	background-repeat: no-repeat;
+
+}
+
+.pon-one{
+
+	background-image: url("coffee.jpg");
+
+
+}
+.pon-two{
+
+	background-image: url("hamburger.jpg");
+
+}
+.akyaung-ayar{
+	text-align: center;
+
+	height: 20%;
+
+	background-color: #ddd;
+}
 /*Footer*/
 
 footer{
@@ -359,4 +377,23 @@ footer{
     	margin-right: 10px;
     }
 
+    .content-lay{
+
+    	opacity: 1;
+
+    }
+
+    .amyint-apyae{
+
+    	height: 62%;
+
+    	background-attachment: scroll;
+
+    	background-size: cover;
+    }
+    .akyaung-ayar{
+		
+		height: 38%;
+
+	}
 }

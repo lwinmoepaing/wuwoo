@@ -30,6 +30,11 @@ $(document).ready(function(){
 		});
 	});
 
+	$("div#conlay").mouseenter(function(){
+		$("img#cho").removeClass("content-lay");
+	});
+
+
 	$(function() {
                 
                 setTimeout(function() {
@@ -37,5 +42,6 @@ $(document).ready(function(){
                 }, 500);
                 
     })();
+
 
 });
