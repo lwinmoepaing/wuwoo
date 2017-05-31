@@ -300,9 +300,9 @@ footer{
 
 	width: 100%;
 
-	color: rgba(0,0,0,0.5);
+	color: white;
 
-	text-shadow: 0px 2px 3px gold;
+	text-shadow: 0px 0.5px 2px white;
 
 	font-size: 20px;
 
@@ -310,7 +310,7 @@ footer{
 
 	text-align: right;
 
-	background: rgba(255,255,255,0.2);
+	background: rgba(0,0,0,1);
 
 
 }
@@ -347,6 +347,10 @@ footer{
 
     nav.mid{
     	display: block;
+    }
+
+    div.ahla{
+    	padding: 6em 1.5em 6em 1.5em;
     }
 
     div.ahla ul li{
