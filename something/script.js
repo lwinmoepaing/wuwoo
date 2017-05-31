@@ -30,7 +30,12 @@ $(document).ready(function(){
 		});
 	});
 
-
-
+	$(function() {
+                
+                setTimeout(function() {
+                    $('div.ahla ul').removeClass('hidden');
+                }, 500);
+                
+    })();
 
 });

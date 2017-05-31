@@ -33,6 +33,8 @@ body{
 
 	min-height: 100%;
 
+	overflow: hidden;
+
 	position: relative;
 
 }
@@ -50,6 +52,77 @@ body{
 [class*="c-"] {
     float: left;
 }
+
+div.ahla {
+
+			width: 100%;
+
+			background-color: white;
+
+			padding: 12em 3em 12em 3em;
+
+			position: relative;
+
+			border-bottom: 4px solid white;
+
+}
+
+div.ahla ul {
+
+			list-style: none;
+
+			position: absolute;
+
+			left: 50%;
+
+			top: 50%;
+
+			transform: translateX(-50%) translateY(-50%);
+
+}
+
+div.ahla ul li{
+
+	display: inline-block;
+
+	font-family: "Times New Roman" , Arial;
+
+	font-size: 4em;
+
+	color: black;
+
+	opacity: 1;
+
+    font-weight: 300;
+
+    transition: all 2.5s ease;
+
+    margin-right: 40px;
+}
+
+div.ahla ul.hidden li {
+
+        opacity: 0;
+
+}
+
+div.ahla ul li:lastchild {
+
+	margin-right: 0;
+
+}
+
+
+div.ahla ul.hidden li:nth-child(1) { transform: translateX(-150px) translateY(-150px); }
+div.ahla ul.hidden li:nth-child(2) { transform: translateX(20px) translateY(80px); }
+div.ahla ul.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+div.ahla ul.hidden li:nth-child(4) { transform: translateX(10px) translateY(-120px); }
+div.ahla ul.hidden li:nth-child(5) { transform: translateX(-180px) translateY(150px); }
+div.ahla ul.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+div.ahla ul.hidden li:nth-child(7) { transform: translateX(30px) translateY(150px); }
+
+
+
 
 header{
 
@@ -195,9 +268,11 @@ nav.mid ul li a{
 /*Middle COntent*/
 #conlay{
 	padding-top: 20px;
+
 	text-align: center;
-	background: #ddd;
+
 	border-bottom: 15px gold solid;
+	
 	box-shadow: 0px 0px 15px 0px black;
 }
 #conlay img{
@@ -209,9 +284,12 @@ nav.mid ul li a{
 	margin-bottom: 2px;
 
 	padding-bottom: 2px;
+
 }
 
 .content-lay{
+
+	opacity: 1;
 
 }
 
@@ -234,12 +312,6 @@ footer{
 
 	background: rgba(255,255,255,0.2);
 
-	position: absolute;
-
-	bottom: 1px;
-
-	right: 1px;
-
 
 }
 
@@ -247,6 +319,10 @@ footer{
 
 .fade{
 	animation: fadename 1.5s ease-out;
+}
+
+.fade2{
+	animation: fadename 2.2s linear;
 }
 
 @keyframes fadename{
@@ -271,6 +347,12 @@ footer{
 
     nav.mid{
     	display: block;
+    }
+
+    div.ahla ul li{
+    	font-size: 1em;
+
+    	margin-right: 10px;
     }
 
 }
